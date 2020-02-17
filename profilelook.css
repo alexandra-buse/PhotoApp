@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px auto 0px;
+  width: 100%;
+  background:black;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+
+
+li a {
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-right: 60px;
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.caption a {
+  text-decoration: none;
+  color: white;
+  margin-left: 210%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    padding-top: 40px;
+    color: white;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  position: center;
+  width: 150px;
+  height: 150px;
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+.photo-to-delete {
+  position: center;
+  height: 250px;
+  width: 350px;
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  position: center;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.delete-btn{
+  text-decoration: none;
+}
+
