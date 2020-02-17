@@ -1,7 +1,6 @@
 <?php
 
   $email = $_GET['email'];
-  // do some validation here to ensure id is safe
 
   $link = mysqli_connect('localhost', 'root', '', 'socialwebsite');
   $sql = "SELECT poza_profil FROM users WHERE email=$email";
